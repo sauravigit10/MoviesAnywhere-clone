@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+.Nav2{
+    height: 18vh;
+    /* width: 97vw; */
+    /* border: 1px solid red; */
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+    /* justify-content: left; */
+   
+
+
+}
+
+.buttton{
+    height: 8vh;
+    width: 7vw;
+    border: 1px solid black;
+    border-radius: 40px;
+    /* margin-left: 40px; */
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.buttton1{
+    height: 8vh;
+    width: 7vw;
+    border: 1px solid black;
+    border-radius: 40px;
+    /* margin-left: 40px; */
+    background-color:rgb(77,77,77);;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.buttton:hover{
+     background-color: rgb(107, 104, 104);
+}   
