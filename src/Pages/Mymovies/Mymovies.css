@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+   
+}
+.HomeDiv1 {
+     min-height: 100vh;   /* fills the viewport */
+    display: flex;        /* flex container */
+    flex-direction: column; /* stack children vertically */
+    background-color: black;
+}

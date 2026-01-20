@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.LoginDiv{
+    background-color: #f3f5f6;
+    height:100vh;
+    border: 7px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        color: black;
+}
+
+.LoginContent{
+    height: 85vh;
+    width: 43vw;
+    margin:auto;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+
+}
+.LoginContent2{
+      height: 95%;
+    width: 65%;
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.LoginHeading{
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+    color: black;
+}
+.LoginSubheading{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: lighter;
+    color: grey;
+}
+label{
+    /* font-size: 18px; */
+    /* margin-top: 10px; */
+    color: black;
+    align-self: flex-start;
+    margin-left: 13px;
+}
+input{
+    width:90%;
+    height: 22px;
+    margin: 10px ;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f3f5f6;
+    align-self: flex-start;
+}
+.LoginButton{
+    width: 60%;
+    height: 8%;
+    border-radius: 19px;
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    color: black;
+    font-weight: bold;
+
+}
+.LoginButton:hover{
+    background-color: white;
+
+    cursor: pointer;
+}
+.link{
+    color: #007bbd;
+    font-weight: 700;
+   font-size:"16px";
+    text-decoration: none;
+}
+.link:hover{
+        color: #5ba2c8;
+}
+div1{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.remeber{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex-direction: row;
+}

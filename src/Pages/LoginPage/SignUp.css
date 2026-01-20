@@ -1,0 +1,78 @@
+
+.SignInDiv{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: #f3f5f6;
+}
+
+.SignInContainer{
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 40vw;
+    background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+}
+.Heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        color: black;
+          /* border: 1px solid black; */
+    height: 25%;
+    width: 40vw;
+  
+}
+.SignUpSubHeading{
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 200;
+    color: grey;
+}
+.SignUpHeading{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.SignUpContent{
+        height: 75%;
+        width: 65%;
+        /* border: 1px solid red; */
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+}
+.LoginButton{
+    background-color: #e5e5e5;
+    border: none;
+    height: 40px;
+    width: 70%;
+    /* padding: 10px 20px; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+       
+
+.Reminder{
+    margin-top: 10px;
+    font-size: 14px;
+    color: grey;
+}
+.link{
+    text-decoration: none;
+    color:#249cea;
+    font-weight: 600;
+
+}
