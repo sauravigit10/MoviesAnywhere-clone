@@ -1,0 +1,59 @@
+.mainDiv{
+   height: 88vh;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.midDiv{
+    height: 70vh;
+    width: 42vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.midDiv p{
+    text-align: center;
+}
+.mainDiv p a{
+    color: skyblue;
+    text-decoration: none;
+}
+.mainDiv img{
+    height: 21vh;
+    margin-top: 30px;
+}
+
+.mainDiv input{
+    /* border: black; */
+    /* border-bottom: white; */
+    background-color: black;
+    margin-left: 26px;
+}
+
+.mainDiv input:focus{
+    border: 1px none  black;
+}
+
+.mainDiv label{
+    color: white;
+    
+    }
+
+button{
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 8vw;
+    background-color: #009cea;
+}
+
+button:hover{
+    background-color: #009cea7d;
+}
+

@@ -1,0 +1,8 @@
+.Deals{
+    background-color: black;
+}
+.MainDeals img{
+    height: 20%;
+    width: 100%;
+    overflow: 0px;
+}

@@ -1,40 +1,34 @@
-*{
-    margin: 0;
-}
-.Nav2{
-    height: 18vh;
-    /* width: 97vw; */
-    /* border: 1px solid red; */
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin-left: 33px;
-    /* justify-content: left; */
+
+.Nav2 {
+  height: 18vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* padding-left: 25px; */
+  /* border: 1px solid red; */
 }
 
-.buttton{
-    height: 8vh;
-    width: 7vw;
-    border: 1px solid black;
-    border-radius: 40px;
-    /* margin-left: 40px; */
-    background-color:black;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
+.button {
+  height: 8vh;
+  padding: 0 20px;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease;
 }
-.buttton1{
-    height: 8vh;
-    width: 7vw;
-    border: 1px solid black;
-    border-radius: 40px;
-    /* margin-left: 40px; */
-    background-color:rgb(77,77,77);;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
+
+.button:not(.active):hover {
+  background-color: rgb(107, 104, 104);
 }
-.buttton:hover{
-     background-color: rgb(107, 104, 104);
-}   
+
+.button.active {
+  background-color: rgb(77, 77, 77);
+}
+

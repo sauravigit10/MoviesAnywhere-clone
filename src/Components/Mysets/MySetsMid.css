@@ -1,0 +1,89 @@
+.MySetsMid{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    }
+.anothermid{
+    height: 50vh;
+    width: 96.5%;
+    /* border: 1px solid red; */
+    background-color:rgb(26,26,26);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* text-align: center; */
+    align-items: center;
+}
+.midd1{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.midd2{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.midd2 img{
+    
+    width: 50vw;
+}
+.mysetsmid2{
+    height: 25vh;
+    width: 96.5%;
+     /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+}
+.sets1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.lastSets{
+    /* border: 1px solid red; */
+    height: 65vh;
+    width: 96.5%;
+
+}
+.last1{
+    
+     height: 8vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-end;
+    font-size: 21px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-bottom: 6px;
+    
+}
+.last2{
+    height: 40vh;
+    border: 1px solid rgb(12,12,12) ;
+    background-color: rgb(12,12,12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}

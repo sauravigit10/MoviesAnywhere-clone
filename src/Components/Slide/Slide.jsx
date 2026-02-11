@@ -35,7 +35,7 @@ const slides = [
 
 function Slide() {
   const sliderRef = useRef(null)
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
 
   useEffect(() => {
@@ -74,7 +74,7 @@ function Slide() {
       </div>
 
       <div className="Titles">
-        {/* TEXT CHANGES WITH SLIDE */}
+      
         <div className="part1">
           <h5>{slides[current].subtitle}</h5>
           <h1>{slides[current].title}</h1>
