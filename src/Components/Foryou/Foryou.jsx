@@ -2,11 +2,12 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Navbar2 from '../Navbar/Navbar2'
 import TitleCards from '../../TitleCards/TitleCards'
-import MiniCards from '../../miniCards/MiniCards'
+// import MiniCards from '../../miniCards/MiniCards'
 import Slide from '../Slide/Slide'
 import MiniCards3 from '../../miniCards/MiniCards3'
 import MiniCards2 from '../../miniCards/MiniCards2'
 import Footer from '../Footer/Footer'
+
 
 function Foryou() {
   return (
@@ -14,10 +15,11 @@ function Foryou() {
         <Navbar/>
         <Navbar2/>
          <Slide/>
-        <TitleCards/>
-            <TitleCards/>
-                <TitleCards/>
-                    <MiniCards/>
+       <TitleCards title="Now Playing" category="now_playing" />
+      <TitleCards title="Top Rated" category="top_rated" />
+      <TitleCards title="Upcoming" category="upcoming" />
+      <TitleCards title="Popular" category="popular" />
+      <MiniCards2/>
                     
              <MiniCards2/>
              <MiniCards3/>
