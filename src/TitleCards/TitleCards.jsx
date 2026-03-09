@@ -8,7 +8,7 @@ function TitleCards() {
       <div className='card'>
         <div className='Category'>
            <h2>New Release</h2>
-            <div>SEE ALL</div>
+            <div style={{fontSize:"13px"}}>SEE ALL</div>
         </div>
         <div className='images'>
             <div className='img'> </div>

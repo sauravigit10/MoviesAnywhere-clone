@@ -18,6 +18,7 @@ function Foryou() {
             <TitleCards/>
                 <TitleCards/>
                     <MiniCards/>
+                    
              <MiniCards2/>
              <MiniCards3/>
         <Footer/>

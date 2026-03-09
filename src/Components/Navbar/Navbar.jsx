@@ -3,6 +3,7 @@ import "./Navbar.css"
 import logo from '../../assets/logo2.png'
 import search from '../../assets/search.png'
 import { Link, NavLink } from 'react-router-dom'
+import { FaSearch } from "react-icons/fa";
 
 
 
@@ -17,7 +18,7 @@ function Navbar() {
     </div>
         <div className='Navdiv1'>
           {/* <i className='searchLogo' class="fa-solid fa-magnifying-glass"></i> */}
-        <img className='searchLogo' src={search} alt="" />
+       <FaSearch className='searchLogo' />
         <h3 className='Signin'><Link style={{textDecoration:"none"}} to="/login">Sign In</Link></h3>
         <button className='navButton'><Link style={{textDecoration:"none"}} to="/signup">Sign up now</Link></button>
     </div>
