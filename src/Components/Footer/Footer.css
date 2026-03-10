@@ -68,4 +68,13 @@
     /* border: 1px solid red; */
     justify-content: center;
 }
+.Footer h5 {
+    
+    cursor: pointer; 
+    transition: color 0.3s ease;
+}
+
+.Footer h5:hover {
+    color: rgb(28, 95, 122); 
+}
 

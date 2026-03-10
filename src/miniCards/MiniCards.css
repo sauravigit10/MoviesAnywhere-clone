@@ -29,7 +29,7 @@
     align-items:last baseline   ;
 }
 .images{
-     height: 82%;
+     height: 77%;
     /* border: 1px solid red; */
     display: flex;
     flex-direction:row;

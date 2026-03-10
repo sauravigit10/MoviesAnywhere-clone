@@ -89,3 +89,53 @@
 .navButton{
     text-decoration: none;
 }
+
+
+.searchOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.searchHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.searchHeader input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  color: black;
+}
+
+.searchCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardd {
+  width: 150px;
+  text-align: center;
+}
+
+.cardd img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
