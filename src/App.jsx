@@ -8,6 +8,8 @@ import SignUp from './Pages/LoginPage/SignUp'
 import Foryou from './Components/Foryou/Foryou'
 import Deals from './Components/Deals/Deals'
 import MySets from './Components/Mysets/MySets'  
+import NowPlaying from './Pages/SeeAll/NowPlaying'
+import TopRated from './Pages/SeeAll/TopRated'
 function App() {
 
   return (
@@ -22,6 +24,9 @@ function App() {
     <Route path='/foryou' element={<Foryou/>}/>
     <Route path='/deals' element={<Deals/>}/>
     <Route path='/mysets' element={<MySets/>}/>
+    <Route path='/NowPlaying' element={<NowPlaying/>}/> 
+    <Route path='/TopRated' element={<TopRated/>}/>
+
     
 
   </Routes>

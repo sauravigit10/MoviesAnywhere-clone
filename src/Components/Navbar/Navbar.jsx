@@ -34,6 +34,7 @@ function Navbar({cards}) {
       {searchOpen && (
         <div className="searchOverlay">
           <div className="searchHeader">
+<FaArrowLeft onClick={() => setSearchOpen(false)} style={{cursor:"pointer"}} />
 
             <input
               type="text"
@@ -41,8 +42,7 @@ function Navbar({cards}) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
-            <FaArrowLeft onClick={() => setSearchOpen(false)} style={{cursor:"pointer"}} />
-          </div>
+              </div>
 
           <div className="searchCards">
             {filteredCards.map(cardd => (
@@ -50,7 +50,7 @@ function Navbar({cards}) {
                 <img
                   src={`https://image.tmdb.org/t/p/w500${cardd.poster_path}`}
                   alt={cardd.title}
-                />
+                /> 
                 <h5>{cardd.title}</h5>
               </div>
             ))}

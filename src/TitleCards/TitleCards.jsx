@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import '../TitleCards/TitleCards.css'
+import { useNavigate } from 'react-router-dom';
 
-function TitleCards({ title, category }) {
+function TitleCards({ title, category, seeall }) {
 
   const [movies, setMovies] = useState([]);
+  const navigate = useNavigate();
 
   const getmovie = () => {
     fetch(`https://api.themoviedb.org/3/movie/${category}?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
@@ -15,16 +17,20 @@ function TitleCards({ title, category }) {
     getmovie()
   }, [category])
 
+  function handleClick() {
+    navigate(`/${title}`)
+  }
   return (
-    <div className='Cards'>
-      <div className='card'>
-
+    <div className={seeall ? "Cards1":"Cards"}>
+      <div className={seeall ? "card1" : "card"}>
         <div className='Category'>
           <h2>{title}</h2>
-          <div style={{fontSize:"13px"}}>SEE ALL</div>
+          <h4 onClick={handleClick} style={{cursor:"pointer"}}>
+            See All
+          </h4>
         </div>
 
-        <div className='images'>
+       <div className={`images ${seeall ? "images-wrap" : ""}`}>
           {movies.map((movie) => (
             <div className='img' key={movie.id}>
               <img

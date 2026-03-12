@@ -28,14 +28,14 @@ function Foryou() {
         <Navbar cards={movies}/>
         <Navbar2/>
         <Slide/>
-       <TitleCards title="Now Playing" category="now_playing" />
-      <TitleCards title="Top Rated" category="top_rated" />
-      <TitleCards title="Upcoming" category="upcoming" />
-      <TitleCards title="Popular" category="popular" />
+       <TitleCards title="NowPlaying" category="now_playing" seeall={false} />
+      <TitleCards title="TopRated" category="top_rated" seeall={false}  />
+      <TitleCards title="Upcoming" category="upcoming" seeall={false}  />
+      <TitleCards title="Popular" category="popular" seeall={false} />
       <MiniCards category="recommendations" title="series collection"/>
       <MiniCards2 category="popular" title="Popular series collection"/>
       <MiniCards2 category="top_rated" title="Top Rated series collection"/>
-     <MiniCards3 personId={287} title="Brad Pitt TV Shows"/> 
+     {/* <MiniCards3 personId={287} title="Brad Pitt TV Shows"/>  */} 
         <Footer/>
     </div>
   )
