@@ -38,9 +38,10 @@
 }
 .logo{
     /* margin-top: px; */
-    width: 43%;
+    width: 100%;
     height: 3.5vh;
 }
+
 .searchLogo{
     margin-top: 4px;
     width: 8%;
@@ -129,12 +130,12 @@
   gap: 20px;
 }
 
-.cardd {
+.carddd {
   width: 150px;
   text-align: center;
 }
 
-.cardd img {
+.carddd img {
   width: 100%;
   height: 80%;
   border-radius: 10px;

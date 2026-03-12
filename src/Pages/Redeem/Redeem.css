@@ -31,13 +31,23 @@
 
 .mainDiv input{
     /* border: black; */
-    /* border-bottom: white; */
+    border-top: white;
+    /* border: none none white none; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-color: white;
     background-color: black;
     margin-left: 26px;
 }
 
 .mainDiv input:focus{
-    border: 1px none  black;
+  
+    outline: none;
+    display: flex;
+    text-align: center;
 }
 
 .mainDiv label{

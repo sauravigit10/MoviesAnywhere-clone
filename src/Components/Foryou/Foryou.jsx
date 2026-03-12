@@ -32,9 +32,9 @@ function Foryou() {
       <TitleCards title="TopRated" category="top_rated" seeall={false}  />
       <TitleCards title="Upcoming" category="upcoming" seeall={false}  />
       <TitleCards title="Popular" category="popular" seeall={false} />
-      <MiniCards category="recommendations" title="series collection"/>
-      <MiniCards2 category="popular" title="Popular series collection"/>
-      <MiniCards2 category="top_rated" title="Top Rated series collection"/>
+      <MiniCards category="recommendations" title="Series_Collection" seeall={false}/>
+      <MiniCards2 category="popular" title="Popular_series_Collection" seeall={false}/>
+      <MiniCards2 category="top_rated" title="Top_Rated_series_Collection" seeall={false}/>
      {/* <MiniCards3 personId={287} title="Brad Pitt TV Shows"/>  */} 
         <Footer/>
     </div>

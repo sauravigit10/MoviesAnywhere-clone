@@ -1,6 +1,7 @@
 import React from 'react'
 import './../Footer/Footer.css'
 import poweredBy from '../../assets/keychest.png'
+import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -8,9 +9,10 @@ function Footer() {
         <div className='midFooter'>
             <div className='mid1'>
               <div className='mid2'>
-                 <h5>Home</h5>
-                 <h5>Reedem </h5>
-                  <h5>My Movies</h5>
+                 <NavLink style={{textDecoration:"none"}} to='/home'><h5>Home</h5></NavLink>
+                  <NavLink style={{textDecoration:"none"}} to={'/redeem'}><h5>Reedem</h5></NavLink>
+                   <NavLink style={{textDecoration:"none"}} to={'/Mymovies'}><h5>My Movies</h5></NavLink>
+                
                   </div>
             </div>
                  <div className='mid1'>

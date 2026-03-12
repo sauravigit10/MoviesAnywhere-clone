@@ -18,7 +18,7 @@ function Navbar({cards}) {
     <>
       <div className='Nav'>
         <div className='Navdiv'>
-          <img className='logo' src={logo} alt="logo-img"/>
+        <NavLink className="logos"  to="/home"> <img className='logo'  src={logo} alt="logo-img"/></NavLink> 
           <NavLink to="/home" className='navLink' style={{textDecoration:"none"}}><h3>Home</h3></NavLink>
           <NavLink to="/redeem" className='navLink' style={{textDecoration:"none"}}><h3>Redeem</h3></NavLink>
           <NavLink to="/mymovies" className='navLink' style={{textDecoration:"none"}}><h3>My Movies</h3></NavLink>
@@ -46,7 +46,7 @@ function Navbar({cards}) {
 
           <div className="searchCards">
             {filteredCards.map(cardd => (
-              <div className="cardd" key={cardd.id}>
+              <div className="carddd" key={cardd.id}>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${cardd.poster_path}`}
                   alt={cardd.title}

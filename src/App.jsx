@@ -10,6 +10,11 @@ import Deals from './Components/Deals/Deals'
 import MySets from './Components/Mysets/MySets'  
 import NowPlaying from './Pages/SeeAll/NowPlaying'
 import TopRated from './Pages/SeeAll/TopRated'
+import Upcoming from './Pages/SeeAll/Upcoming'
+import Popular from './Pages/SeeAll/Popular'
+import SeriesCollection from './Pages/SeeAll/SeriesCollection'
+import PopularSeriesCollection from './Pages/SeeAll/PopularSeriesCollection'
+import TopRatedCollection from './Pages/SeeAll/TopRatedCollection'
 function App() {
 
   return (
@@ -26,7 +31,12 @@ function App() {
     <Route path='/mysets' element={<MySets/>}/>
     <Route path='/NowPlaying' element={<NowPlaying/>}/> 
     <Route path='/TopRated' element={<TopRated/>}/>
-
+    <Route path='/Upcoming' element={<Upcoming/>}/>
+    <Route path='/Popular' element={<Popular/>}/>
+    <Route path='/Series_Collection' element={<SeriesCollection/>}/>
+    <Route path='/Popular_series_Collection' element={<PopularSeriesCollection/>}/>
+    <Route path='/Top_Rated_series_Collection' element={<TopRatedCollection/>}/>
+    
     
 
   </Routes>

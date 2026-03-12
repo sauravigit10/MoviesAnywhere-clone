@@ -6,7 +6,7 @@ function NowPlaying() {
   return (
     <div className='main'>
        <TitleCards title="NowPlaying" category="now_playing" seeall={true}/>  
-          
+       
     </div>
   )
 }

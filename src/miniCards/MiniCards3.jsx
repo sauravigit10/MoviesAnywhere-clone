@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../miniCards/MiniCards.css'
 
-function MiniCards3({ personId, title }) {
+function MiniCards3({ personId, title,seeall }) {
 
   const [shows, setShows] = useState([]);
 
@@ -15,11 +15,17 @@ function MiniCards3({ personId, title }) {
     getPersonShows()
   }, [personId])
 
+    function handleClick()
+    {
+      nav(`/${title}`)
+    }
+
   return (
-    <div className='miniCards'>
-      <div className='card'>
+     <div className={seeall? "miniCards":"miniCards1"}>
+     <div className={seeall? "cardds":"cardd"}>
         <div className='Category'>
           <h2>{title}</h2>
+           <h4 onClick={handleClick}  style={{cursor:"pointer"}}>See all</h4>
         </div>
 
         <div className='images'>

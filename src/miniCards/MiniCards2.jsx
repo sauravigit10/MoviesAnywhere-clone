@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import '../miniCards/MiniCards.css'
+import { useNavigate } from 'react-router-dom';
 
-function MiniCards2({category,title}) {
+function MiniCards2({category,title,seeall}) {
 
   const [mini, setMini] = useState([]);
+  const nav=useNavigate();
 
   const getSeries = () => {
     fetch(`https://api.themoviedb.org/3/tv/${category}?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
@@ -14,15 +16,19 @@ function MiniCards2({category,title}) {
   useEffect(() => {
     getSeries()
   }, [category])
-
+    function handleClick()
+    {
+      nav(`/${title}`)
+    }
   return (
-    <div className='miniCards'>
-      <div className='card'>
+    <div className={seeall? "miniCards":"miniCards1"}>
+     <div className={seeall? "cardds":"cardd"}>
         <div className='Category'>
           <h2>{title}</h2>
+           <h4 onClick={handleClick}  style={{cursor:"pointer"}}>See all</h4>
         </div>
 
-        <div className='images'>
+         <div className={`images ${seeall ? "images-wrap" : ""}`}>
           {mini.map((show) => (
             <div className='img' key={show.id}>
               <img
