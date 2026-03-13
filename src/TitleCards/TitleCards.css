@@ -14,15 +14,19 @@
     gap: 20px;
     background-color: black;
     padding: 15px;
+    
 }
 .Cards {
-    height: 31%;
+    height: 31%; 
 }
 
 
 .Cards1 {
     height: auto; 
     width: 100%;
+    padding-top: 20px;
+
+    
 }
 
 .card, .card1 {
@@ -48,11 +52,11 @@
 }
 
 .images{
-       display: flex;
+    display: flex;
     gap: 10px;
     overflow-x: auto;
     padding-bottom: 10px;
-    scrollbar-width: none;
+    scrollbar-width: none; 
 }
 .images::-webkit-scrollbar {
     display: none;
@@ -70,7 +74,7 @@
     object-fit: cover;
     border-radius: 5px;
     border: 1px solid black;
-    transition: transform 0.3s;
+    transition: transform 0.3s; 
 }
 
 .images img:hover{

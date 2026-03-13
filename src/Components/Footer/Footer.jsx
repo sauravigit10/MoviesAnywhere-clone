@@ -39,7 +39,7 @@ function Footer() {
               </div>
           
                  <div className='mid1'>
-                <img className='PoweredBy' src={poweredBy} alt="" />
+                <img className='PoweredBy' src={poweredBy} alt=""/>
             </div>
 
         </div>

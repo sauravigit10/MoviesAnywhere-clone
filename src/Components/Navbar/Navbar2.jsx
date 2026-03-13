@@ -3,11 +3,11 @@ import "./Navbar2.css";
 
 function Navbar2() {
   return (
-    <div className="Nav2">
+    <div className="Nav22">
       <NavLink
         to="/foryou"
         className={({ isActive }) =>
-          isActive ? "button active" : "button"
+          isActive ? "buttonn active" : "buttonn"
         }
       >
         For you
@@ -16,7 +16,7 @@ function Navbar2() {
       <NavLink
         to="/deals"
         className={({ isActive }) =>
-          isActive ? "button active" : "button"
+          isActive ? "buttonn active" : "buttonn"
         }
       >
         Deals
@@ -25,7 +25,7 @@ function Navbar2() {
       <NavLink
         to="/mysets"
         className={({ isActive }) =>
-          isActive ? "button active" : "button"
+          isActive ? "buttonn active" : "buttonn"
         }
       >
         My Sets

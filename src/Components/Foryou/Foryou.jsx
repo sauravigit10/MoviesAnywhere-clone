@@ -28,7 +28,7 @@ function Foryou() {
         <Navbar cards={movies}/>
         <Navbar2/>
         <Slide/>
-       <TitleCards title="NowPlaying" category="now_playing" seeall={false} />
+      <TitleCards title="NowPlaying" category="now_playing" seeall={false} />
       <TitleCards title="TopRated" category="top_rated" seeall={false}  />
       <TitleCards title="Upcoming" category="upcoming" seeall={false}  />
       <TitleCards title="Popular" category="popular" seeall={false} />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../miniCards/MiniCards.css'
+import { FaArrowLeft } from 'react-icons/fa';
 
 function MiniCards3({ personId, title,seeall }) {
 
@@ -19,14 +20,21 @@ function MiniCards3({ personId, title,seeall }) {
     {
       nav(`/${title}`)
     }
+            function handleHtml() {
+          return seeall ? (
+            <FaArrowLeft onClick={()=>nav(-1)} style={{ cursor: "pointer" }} />
+          ) : "See All";
+        }
 
   return (
      <div className={seeall? "miniCards":"miniCards1"}>
      <div className={seeall? "cardds":"cardd"}>
         <div className='Category'>
           <h2>{title}</h2>
-           <h4 onClick={handleClick}  style={{cursor:"pointer"}}>See all</h4>
-        </div>
+           <h4 onClick={handleClick} style={{cursor:"pointer"}}>
+        {handleHtml()}
+      </h4>
+              </div>
 
         <div className='images'>
           {shows.map((show) => (

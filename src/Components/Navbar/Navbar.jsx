@@ -12,7 +12,7 @@ function Navbar({cards}) {
     ? cards.filter(card =>
         card.title.toLowerCase().includes(query.toLowerCase())
       )
-    :[1000];
+    :[];
 
   return (
     <>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../TitleCards/TitleCards.css'
 import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 function TitleCards({ title, category, seeall }) {
 
@@ -20,14 +21,19 @@ function TitleCards({ title, category, seeall }) {
   function handleClick() {
     navigate(`/${title}`)
   }
+             function handleHtml() {
+           return seeall ? (
+             <FaArrowLeft onClick={()=>navigate(-1)} style={{ cursor: "pointer" }} />
+           ) : "See All";
+         }
   return (
     <div className={seeall ? "Cards1":"Cards"}>
       <div className={seeall ? "card1" : "card"}>
         <div className='Category'>
           <h2>{title}</h2>
-          <h4 onClick={handleClick} style={{cursor:"pointer"}}>
-            See All
-          </h4>
+           <h4 onClick={handleClick} style={{cursor:"pointer"}}>
+        {handleHtml()}
+      </h4>  
         </div>
 
        <div className={`images ${seeall ? "images-wrap" : ""}`}>

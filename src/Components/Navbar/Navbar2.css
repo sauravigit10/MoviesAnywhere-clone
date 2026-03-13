@@ -1,22 +1,24 @@
 
-.Nav2 {
+.Nav22 {
   height: 18vh;
   background-color: black;
   display: flex;
   align-items: center;
+
   gap: 16px;
   position:sticky !important; 
   top: 0;
   left: 0;
   scroll-behavior: smooth;
-  width: 97.5%;
+  width: 100%;
+  /* border: 1px solid red; */
   z-index: 1000;
   padding: 0;
   margin: 0%;
- 
+
 }
 
-.button {
+.buttonn {
   height: 8vh;
   padding: 0 20px;
   border-radius: 40px;
@@ -29,13 +31,14 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.25s ease;
+  margin-left: 20px;
 }
 
-.button:not(.active):hover {
+.buttonn:not(.active):hover {
   background-color: rgb(107, 104, 104);
 }
 
-.button.active {
+.buttonn.active {
   background-color: rgb(77, 77, 77);
 }
 

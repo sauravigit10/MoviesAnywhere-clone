@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../miniCards/MiniCards.css'
 import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 function MiniCards({category,title,seeall}) {
 
@@ -14,12 +15,17 @@ function MiniCards({category,title,seeall}) {
   }
 
   useEffect(() => {
-    getSeries()
+    getSeries();
   }, [category]);
 
     function handleClick()
     {
       nav(`/${title}`)
+    }
+        function handleHtml() {
+      return seeall ? (
+        <FaArrowLeft onClick={()=>nav(-1)} style={{ cursor: "pointer" }} />
+      ) : "See All";
     }
 
 
@@ -28,9 +34,9 @@ function MiniCards({category,title,seeall}) {
       <div className={seeall? "cardds":"cardd"}>
         <div className='Category'>
           <h2>{title}</h2>
-           <h4 onClick={handleClick}  style={{cursor:"pointer"}}>
-            See All
-          </h4>
+                <h4 onClick={handleClick} style={{cursor:"pointer"}}>
+        {handleHtml()}
+      </h4>
         </div>
 
          <div className={`images ${seeall ? "images-wrap" : ""}`}>
