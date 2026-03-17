@@ -6,7 +6,7 @@ function Navbar2() {
     <div className="Nav22">
       <NavLink
         to="/foryou"
-        className={({ isActive }) =>
+         className={({ isActive }) =>
           isActive ? "buttonn active" : "buttonn"
         }
       >

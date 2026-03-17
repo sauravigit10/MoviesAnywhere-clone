@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './../Redeem/Redeem.css'
 import redeemImg from '../../assets/redeem.png'
 
 function RedeemBox() {
+  const useref=useRef();
+const handleClick =()=>
+{
+  useref.current.focus
+}
   return (
     <div className='mainDiv'>
         <div className="midDiv">
@@ -13,9 +18,11 @@ function RedeemBox() {
                     <img src={redeemImg} alt="" />
         <br /> <br /> <br /> <br /> 
         <div style={{display:"flex",height:"30vh",width:"40vw",flexDirection:"column",justifyContent:"center",alignItems:"center",textAlign:"center"}}>
-                <label style={{marginLeft:"28px"}}  For="input">Enter Code:</label>
-                <input type="text" name="input" id="input" /> <br /> <br />
+                <label style={{marginLeft:"28px"}} onClick={handleClick}>Enter Code:</label>
+                <input ref={useref} className='input' type="text" name="input" id="input" /> <br /> <br />
                 <button>Enter</button>
+                  
+     
             </div>
         </div>
 

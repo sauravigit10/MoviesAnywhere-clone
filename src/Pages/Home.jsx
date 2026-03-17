@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Navbar2 from '../Components/Navbar/Navbar2'
 import '../Pages/Home.css'
@@ -8,6 +8,7 @@ function Home() {
   return (
     <div className='HomeDiv'>
         <Foryou/>
+      
     </div>
   )
 }

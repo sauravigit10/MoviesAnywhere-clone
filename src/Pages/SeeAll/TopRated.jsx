@@ -5,7 +5,6 @@ function TopRated() {
   return (
     <div className='main'>
       <TitleCards title="TopRated" category="top_rated" seeall={true}  />
-     
     </div>
   )
 }

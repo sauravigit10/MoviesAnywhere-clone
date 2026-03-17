@@ -9,18 +9,18 @@ function Login() {
         <div className='LoginDiv'>
          <div className='LoginContent'>
          <div className='LoginContent2'>
-        <div1>
+        <div className='div1'>
         <h4 className='LoginHeading'>Welcome Back!</h4>
         <h3 className='LoginSubheading'>Sign in using</h3>
-        </div1>
-        <div1>
+        </div>
+        <div className='div1'>
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" />
-        </div1>
-        <div1>
+        </div>
+        <div className='div1'>
         <label htmlFor="password">Password:</label>
         <input type="password" id="password" name="password" />
-        </div1>
+        </div>
         <div className='remeber'>
          <div style={{display:"flex",width:"10vw",flexDirection:"row",margin:"0",alignItems:"center",}}>
          <input type="checkbox" style={{}}/>

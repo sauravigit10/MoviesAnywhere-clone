@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Navbar2 from '../Navbar/Navbar2'
 import TitleCards from '../../TitleCards/TitleCards'
@@ -8,10 +8,12 @@ import MiniCards3 from '../../miniCards/MiniCards3'
 import MiniCards2 from '../../miniCards/MiniCards2'
 import Footer from '../Footer/Footer'
 import MiniCards from '../../miniCards/MiniCards'
+import { FaArrowRight, FaArrowUp } from 'react-icons/fa'
+import '../Foryou/Foryou.css'
 
 function Foryou() {
   const [movies, setMovies] = useState([]);
-
+  const ref=useRef();
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=61ba9839bf7e2d04c438b30a39c4e3ef&language=en-US&page=1`
@@ -22,9 +24,15 @@ function Foryou() {
       })
       .catch((err) => console.error(err));
   }, []);
+  const handleReference=()=>
+  {
+    ref.current.scrollIntoView({behavior:"smooth"})
+  }
+
+
 
   return (
-       <div className='HomeDiv'>
+       <div ref={ref} className='HomeDiv'>
         <Navbar cards={movies}/>
         <Navbar2/>
         <Slide/>
@@ -36,6 +44,7 @@ function Foryou() {
       <MiniCards2 category="popular" title="Popular_series_Collection" seeall={false}/>
       <MiniCards2 category="top_rated" title="Top_Rated_series_Collection" seeall={false}/>
      {/* <MiniCards3 personId={287} title="Brad Pitt TV Shows"/>  */} 
+     <div className='divvv' onClick={handleReference} style={{backgroundColor:"black",alignItems:"flex-end",textAlign:"right",paddingRight:"9px",justifyItems:"center"}}> <button className='btn' style={{width:"2.4vw",borderRadius:"100%"}}> <FaArrowUp/></button> </div>
         <Footer/>
     </div>
   )

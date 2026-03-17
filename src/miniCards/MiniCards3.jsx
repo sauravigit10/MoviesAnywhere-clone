@@ -22,7 +22,7 @@ function MiniCards3({ personId, title,seeall }) {
     }
             function handleHtml() {
           return seeall ? (
-            <FaArrowLeft onClick={()=>nav(-1)} style={{ cursor: "pointer" }} />
+            <FaArrowLeft   onClick={()=>nav(-1)} style={{ cursor: "pointer" }} />
           ) : "See All";
         }
 

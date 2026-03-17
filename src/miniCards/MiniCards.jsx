@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import '../miniCards/MiniCards.css'
 import { useNavigate } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 function MiniCards({category,title,seeall}) {
 
   const [mini, setMini] = useState([]);
   const nav=useNavigate();
+  const ref=useRef();
 
   const getSeries = () => {
     fetch(`https://api.themoviedb.org/3/tv/1399/${category}?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
@@ -27,6 +28,14 @@ function MiniCards({category,title,seeall}) {
         <FaArrowLeft onClick={()=>nav(-1)} style={{ cursor: "pointer" }} />
       ) : "See All";
     }
+    const handleRef=()=>
+    {
+      ref.current.scrollLeft -=300;
+    }
+    const handleRight =()=>
+    {
+      ref.current.scrollLeft +=300
+    }
 
 
   return (
@@ -38,8 +47,11 @@ function MiniCards({category,title,seeall}) {
         {handleHtml()}
       </h4>
         </div>
-
-         <div className={`images ${seeall ? "images-wrap" : ""}`}>
+        <div className='wrap'>
+        <button onClick={handleRef} className="arrow left">
+    <FaArrowLeft />
+  </button>
+         <div ref={ref} className={`images ${seeall ? "images-wrap" : ""}`}>
           {mini.map((show) => (
             <div className='imgg' key={show.id}>
               <img className='imagee'
@@ -48,10 +60,17 @@ function MiniCards({category,title,seeall}) {
               />
             </div>
           ))}
-        </div>
+                 </div>
+                   <button onClick={handleRight} className="arrow right">
+    <FaArrowRight />
+  </button>
+  </div>
+       
 
       </div>
+    
     </div>
+    
   )
 }
 

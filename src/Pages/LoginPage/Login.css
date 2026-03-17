@@ -90,7 +90,7 @@ input{
 .link:hover{
         color: #5ba2c8;
 }
-div1{
+.div1{
    display: flex;
    flex-direction: column;
    width: 100%;
