@@ -8,9 +8,7 @@ function Home() {
   return (
     <div className='HomeDiv'>
         <Foryou/>
-      
     </div>
-  )
+  ) 
 }
-
 export default Home

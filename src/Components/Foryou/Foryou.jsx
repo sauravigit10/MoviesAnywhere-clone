@@ -23,7 +23,8 @@ function Foryou() {
         setMovies(data.results);
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, []); 
+  
   const handleReference=()=>
   {
     ref.current.scrollIntoView({behavior:"smooth"})
@@ -32,7 +33,7 @@ function Foryou() {
 
 
   return (
-       <div ref={ref} className='HomeDiv'>
+       <div ref={ref} className='HomeDiv'>   
         <Navbar cards={movies}/>
         <Navbar2/>
         <Slide/>

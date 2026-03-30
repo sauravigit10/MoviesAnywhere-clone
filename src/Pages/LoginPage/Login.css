@@ -104,3 +104,93 @@ input{
     /* border: 1px solid red; */
     flex-direction: row;
 }
+
+
+@media (max-width: 768px) {
+
+  .LoginDiv {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .LoginContent {
+    width: 70vw;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .LoginContent2 {
+    width: 80%;
+  }
+
+  .LoginButton {
+    width: 80%;
+    height: 40px;
+  }
+
+  .remeber div:first-child {
+    width: auto !important;
+  }
+
+  .remeber span {
+    width: auto !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .LoginDiv {
+    height: auto;
+    padding: 15px 8px;
+  }
+
+  .LoginContent {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .LoginContent2 {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .LoginHeading {
+    font-size: 20px;
+  }
+
+  .LoginSubheading {
+    font-size: 13px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .LoginButton {
+    width: 100%;
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .remeber {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .remeber div {
+    width: auto !important;
+    justify-content: center;
+  }
+
+  .remeber span {
+    width: auto !important;
+    font-size: 12px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+}

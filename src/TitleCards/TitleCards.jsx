@@ -49,9 +49,9 @@ function TitleCards({ title, category, seeall }) {
       </h4>  
         </div>
           <div className='wrap'>
-                        <button onClick={handleRef} className="arrow left">
-                    <FaArrowLeft />
-                  </button>
+          { seeall? null:(<button  onClick={handleRef} className="arrow Left">
+             <FaArrowLeft/>
+           </button>) }
 
        <div ref={newRef} className={`images ${seeall ? "images-wrap" : ""}`}>
           {movies.map((movie) => (
@@ -64,9 +64,10 @@ function TitleCards({ title, category, seeall }) {
           ))}
                             
                     </div>
-                     <button onClick={handleRight} className="arrow right">
-                      <FaArrowRight />
-                    </button>
+                      { seeall? null:(<button  onClick={handleRight} className="arrow right">
+                        <FaArrowRight/>
+                      </button>)
+                       }
         </div>
 
       </div>

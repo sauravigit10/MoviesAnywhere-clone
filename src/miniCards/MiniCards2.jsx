@@ -46,9 +46,9 @@ function MiniCards2({category,title,seeall}) {
       </h4>      
         </div>
            <div className='wrap'>
-                <button onClick={handleRef} className="arrow left">
-            <FaArrowLeft />
-          </button>
+              { seeall? null:(<button  onClick={handleRef} className="arrow Left">
+                 <FaArrowLeft/>
+               </button>) }
          <div ref={ref} className={`images ${seeall ? "images-wrap" : ""}`}>
           {mini.map((show) => (
             <div className='img' key={show.id}>
@@ -60,9 +60,11 @@ function MiniCards2({category,title,seeall}) {
           ))}
         </div>
       
-                           <button onClick={handleRight} className="arrow right">
-            <FaArrowRight />
-          </button>
+         { seeall? null:(<button  onClick={handleRight} className="arrow right">
+                             <FaArrowRight/>
+                           </button>)
+                         
+                                         }
           </div>
           
           </div>

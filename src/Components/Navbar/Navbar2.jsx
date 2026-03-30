@@ -4,12 +4,11 @@ import "./Navbar2.css";
 function Navbar2() {
   return (
     <div className="Nav22">
-      <NavLink
-        to="/foryou"
+        <NavLink 
+         to="/foryou"
          className={({ isActive }) =>
           isActive ? "buttonn active" : "buttonn"
-        }
-      >
+        } >
         For you
       </NavLink>
 
@@ -31,6 +30,7 @@ function Navbar2() {
         My Sets
       </NavLink>
     </div>
+  
   );
 }
 

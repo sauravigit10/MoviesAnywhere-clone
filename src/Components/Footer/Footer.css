@@ -7,7 +7,7 @@
      border: 1px solid rgb(24,26,29);
     background-color:rgb(24,26,29);
     color: #ffffff;
-      height: 40vh;
+      height: 37vh;
     /* background-color: aqua; */
     /* padding-top: 20px; */
 }
@@ -77,4 +77,59 @@
 .Footer h5:hover {
     color: rgb(28, 95, 122); 
 }
+.anchor{
+    text-decoration: none;
+    font-size: 14px;
+}
 
+/* 📱 Tablet */
+@media (max-width: 768px) {
+
+  .Footer {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .mid1 {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .mid2,
+  .mid3,
+  .mid4,
+  .mid5 {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .PoweredBy {
+    height: 40px;
+  }
+}
+/* 📱 Mobile */
+@media (max-width: 480px) {
+
+  .mid2,
+  .mid3,
+  .mid4,
+  .mid5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .Footer h5 {
+    font-size: 12px;
+  }
+
+  .anchor {
+    font-size: 12px;
+  }
+
+  .PoweredBy {
+    height: 30px;
+  }
+}

@@ -54,7 +54,7 @@ function Slide() {
       left: sliderRef.current.clientWidth * index,
       behavior: 'smooth',
     })
-
+    
     setCurrent(index)
   }
 
@@ -63,7 +63,7 @@ function Slide() {
       <div className="Banners">
         <div className="slider" ref={sliderRef}>
           {slides.map((slide, index) => (
-            <img
+            <img 
               key={index}
               className="BannerImg"
               src={slide.image}
@@ -74,7 +74,6 @@ function Slide() {
       </div>
 
       <div className="Titles">
-      
         <div className="part1">
           <h5>{slides[current].subtitle}</h5>
           <h1>{slides[current].title}</h1>

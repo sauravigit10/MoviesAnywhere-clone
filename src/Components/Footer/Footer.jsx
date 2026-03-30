@@ -17,19 +17,19 @@ function Footer() {
             </div>
                  <div className='mid1'>
                   <div  className='mid3'>
-                <h5>Help Center & Contact us </h5>
-                 <h5>Legal Notices</h5>
-                  <h5>Privacy Policy</h5>
-                  <h5>Terms of use</h5>
-                  <h5>Activate Your Device</h5>
+                <a className='anchor' href='https://help.moviesanywhere.com/hc/en-us' >Help Center & Contact us </a>
+                  <a className='anchor' href='https://moviesanywhere.com/legal-notices' >Legal Notices</a>
+                   <a className='anchor' href='https://moviesanywhere.com/privacy-policy' >Privacy Policy</a>
+                   <a className='anchor' href='https://moviesanywhere.com/terms-of-use' >Terms of use</a>
+                   <a className='anchor' href='https://moviesanywhere.com/login?redirectURI=%2Fconnect-device' >Activate Your Device</a>
                   </div>
             </div>
                  <div className='mid1'>
                   <div  className='mid4'>
-                <h5>Interest Based Ads</h5>
-                 <h5>Your US State Privacy Rights</h5>
-                  <h5>Do not Sell or Share My Personal Information</h5>
-                  <h5>Closed Captioning Inquires</h5>
+                 <a className='anchor' href='https://moviesanywhere.com/privacy-policy#online-tracking-and-advertising' >Interest Based Ads</a>
+                  <a className='anchor' href='https://moviesanywhere.com/your-us-state-privacy-rights' >Your US State Privacy Rights</a>
+                   <a className='anchor' href='https://moviesanywhere.com/legal-notices' >Do not Sell or Share My Personal Information</a>
+                   <a className='anchor' href='https://help.moviesanywhere.com/hc/en-us/articles/115004648366-I-m-having-trouble-with-closed-captions' >Closed Captioning Inquires</a>
                   </div>
             </div>
                  <div className='mid1'>
