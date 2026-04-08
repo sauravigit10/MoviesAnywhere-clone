@@ -1,0 +1,53 @@
+.PrivacyPolicy{
+    align-items: center;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    height: 70rem;
+    background-color: rgb(243,245,246);
+    color: black;
+
+}
+.PrivacyPolicySection h4{
+    color: black;
+}
+.PrivacyPolicySection{
+    border: 1px solid rgb(223,223,223);
+    height: 65rem;
+    width: 38rem;
+    background-color: rgb(255,255,255);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    color: black;
+    padding-left: 17px;
+    padding-right: 15px;
+
+}
+.PrivacyPolicySection span{
+    color: black;
+}
+.PrivacyPolicySection h2{
+    color: black;
+}
+.updates{
+    color: black;
+    display: flex;
+    text-align: start;
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-top: 15px;
+}
+
+.PrivacyPolicySection li{
+    color: black;
+}
+.PrivacyPolicySection h3{
+    color: black;
+}
+

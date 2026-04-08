@@ -6,6 +6,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 function MiniCards2({category,title,seeall}) {
 
   const [mini, setMini] = useState([]);
+  const[VideoKey,setVideoKey]=useState(null);
   const nav=useNavigate();
   const ref=useRef();
 
@@ -35,6 +36,20 @@ function MiniCards2({category,title,seeall}) {
     {
       ref.current.scrollLeft +=300
     }
+    const handleMovieClick=(id)=>
+    {
+       fetch(`https://api.themoviedb.org/3/tv/${id}/videos?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
+        .then(res=>res.json())
+        .then(data=> {
+          if(data.results.length >0)
+          {
+            setVideoKey(data.results[0].key);
+          }
+          else{
+            alert("Trailer not availabele");
+          }
+        })
+    }
 
   return (
     <div className={seeall? "miniCards":"miniCards1"}>
@@ -51,8 +66,8 @@ function MiniCards2({category,title,seeall}) {
                </button>) }
          <div ref={ref} className={`images ${seeall ? "images-wrap" : ""}`}>
           {mini.map((show) => (
-            <div className='img' key={show.id}>
-              <img
+            <div className='imgg' key={show.id} onClick={()=>handleMovieClick(show.id)}>
+              <img className='imagee'
                 src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
                 alt={show.name}
               />
@@ -66,10 +81,20 @@ function MiniCards2({category,title,seeall}) {
                          
                                          }
           </div>
+        {VideoKey &&  (
+        <div className="video-player">
+            <iframe  width="1100"
+              height="650"
+              
+              src={`https://www.youtube.com/embed/${VideoKey}`}
+              title="Movie Trailer"
+              allowFullScreen></iframe>
+              <button className="close-btn" onClick={()=>setVideoKey(null)}>Go Back</button>
+        </div>
+       )}
+
           
           </div>
-
-    
     </div>
   )
 }

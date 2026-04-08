@@ -7,7 +7,7 @@
      border: 1px solid rgb(24,26,29);
     background-color:rgb(24,26,29);
     color: #ffffff;
-      height: 37vh;
+    height: 33vh;
     /* background-color: aqua; */
     /* padding-top: 20px; */
 }
@@ -15,7 +15,7 @@
     /* width: 55vh; */
     /* border: 1px solid red; */
       /* height: 36vh; */
-      margin-top: 26px;
+      margin-top: 10px;
      
       /* margin-left: 22vw; */
 }
@@ -109,7 +109,7 @@
     height: 40px;
   }
 }
-/* 📱 Mobile */
+
 @media (max-width: 480px) {
 
   .mid2,

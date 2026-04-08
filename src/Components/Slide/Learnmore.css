@@ -1,0 +1,244 @@
+
+.LearnMainDiv{
+    /* background-color:linear-gradient(to bottom, rgb(30,28,77),black); */
+    background: linear-gradient(to bottom, rgb(30,28,77),rgb(30,28,77), black);
+    /* border: 1px solid red; */
+    /* height: 100vh; */
+    height:145rem;
+    overflow: hidden;
+
+}
+.miniLearnDiv{
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.left{
+     height: 20rem;
+     /* border: 1px solid red; */
+     width: 40rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+     line-height: 38px;
+}
+.left Button{
+    background-color: rgb(0,156,234);
+    color: white;
+    height: 2.3rem;
+    width: 10rem;
+    border: 1px solid rgb(0,156,234) ;
+    border-radius: 17px;   
+    margin-top: 15px;           
+
+}
+.right{
+    height: 20rem;
+    /* border: 1px solid red; */
+    width: 40rem;
+}
+
+.right img{
+    height: 22rem;
+    width: 40rem;
+}
+.nextminiLearnDiv{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+   
+    /* border: 1px solid red; */
+}
+.part11{
+    height: 18rem;
+    /* border: 1px solid red; */
+     /* width: 80vw; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 36px;
+}
+.part12{
+    height: 27rem;
+    /* width: 100rem; */
+     /* border: 1px solid red; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     line-height: 20px;
+
+}
+.part111{
+    height: 25rem;
+    /* border: 1px solid red; */
+     /* width: 80vw; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 36px;
+}
+.nextminiLearnDivv{
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.divthree{
+    height: 16rem;
+    /* border: 1px solid red; */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.img1{
+    /* border: 1px solid red; */
+    height: 16rem;
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    gap: 7px;
+
+}
+.img1 img{
+    height: 7rem;
+}
+
+.img11   div{
+    text-align: start;
+    font-size: 14px;
+}
+.img11{
+     /* border: 1px solid red; */
+    height: 16rem;
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    gap: 7px;
+}
+.img1 div{
+    text-align: center;
+}
+.img11 img{
+    height: 7rem;
+}
+.sponser{
+    height: 17rem;
+    /* border: 1px solid red; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 34px;
+}
+.Questions{
+     height: 28rem;
+    /* border: 1px solid red; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Questions .diva{
+    margin-top: 8px;
+    width: 60rem;
+    height: 4.5rem;
+    /* border: 1px solid red; */
+    background-color: rgb(26,26,26);
+    border-radius: 15px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    text-align: start;
+    padding-left: 7px;
+    justify-content: space-between;
+
+}
+.notdiva{
+     margin-top: 8px;
+    width: 60rem;
+    height: 4rem;
+    /* border: 1px solid red; */
+    background-color: rgb(26,26,26);
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    text-align: start;
+    padding-left: 7px;
+    justify-content: space-between;
+}
+.clicked{
+     width: 60rem;
+    height: 4.3rem;
+    /* border: 1px solid red; */
+    background-color: rgb(26,26,26);
+   
+    display: flex;
+    /* justify-content:start; */
+    align-items: center;
+    text-align: start;
+    padding-left: 7px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.lastdiv{
+      height: 18rem;
+    /* border: 1px solid red; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Last-div-mid{
+    width: 57rem;
+    /* border: 1px solid red; */
+}   
+.Last-div-mid p{
+    margin-top: 6px;
+}
+.Last-div-mid .navlink{
+    color: #0056bb;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

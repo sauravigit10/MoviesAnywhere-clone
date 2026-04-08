@@ -17,19 +17,19 @@ const slides = [
     image: Banner1,
     subtitle: 'Stream Anytime',
     title: 'Unlimited Entertainment',
-    link: '/stream',
+    link: '/movies',
   },
   {
     image: Banner2,
     subtitle: 'New Releases',
     title: 'Watch Latest Movies',
-    link: '/latest',
+    link: '/movies',
   },
   {
     image: Banner3,
     subtitle: 'Top Rated Shows',
     title: 'Binge Worthy Series',
-    link: '/shows',
+    link: '/movies',
   },
 ]
 
@@ -59,6 +59,8 @@ function Slide() {
   }
 
   return (
+
+    <div className='mainSlide'>
     <div className="slideDiv">
       <div className="Banners">
         <div className="slider" ref={sliderRef}>
@@ -103,6 +105,7 @@ function Slide() {
           </button>
         </div>
       </div>
+    </div>
     </div>
   )
 }

@@ -8,6 +8,7 @@ function Home() {
   return (
     <div className='HomeDiv'>
         <Foryou/>
+        
     </div>
   ) 
 }

@@ -1,7 +1,9 @@
 .Deals{
     background-color: black;
+    /* border: 1px solid red; */
 }
 .MainDeals img{
+    /* border: 1px solid red; */
     height: 20%;
     width: 100%;
     overflow: 0px;

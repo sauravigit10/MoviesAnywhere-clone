@@ -19,7 +19,7 @@ function Navbar({cards}) {
     <>
    <div className='Nav'>
   
-  {/* LEFT */}
+
   <div className='Navdiv'>
     <NavLink className="logos" to="/home">
       <img className='logo' src={logo} alt="logo-img"/>
@@ -32,7 +32,7 @@ function Navbar({cards}) {
     </div>
   </div>
 
-  {/* RIGHT */}
+
   <div className='Navdiv1'> 
     <FaSearch className='searchLogo' onClick={() => setSearchOpen(true)} />
 

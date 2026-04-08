@@ -19,7 +19,7 @@ function SignUp() {
         <hr style={{border:"1px solid grey",width:"95%"}} />
         <button className='LoginButton'>Continue with Google</button>
         <button className='LoginButton'>Continue with Apple</button>   
-        <div className='Reminder'>Have an account already? <Link to="/login" className='link'>Sign in</Link></div>                                                 
+        <div className='Reminder'>Have an account already? <Link to="/login" className='llink'>Sign in</Link></div>                                                 
                 </div>
 
             </div>

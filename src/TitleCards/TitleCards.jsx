@@ -1,78 +1,126 @@
-import React, { useEffect, useRef, useState } from 'react'
-import '../TitleCards/TitleCards.css'
+import React, { useEffect, useRef, useState } from 'react';
+import '../TitleCards/TitleCards.css';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 function TitleCards({ title, category, seeall }) {
 
   const [movies, setMovies] = useState([]);
+  const [videoKey, setVideoKey] = useState(null);
+
   const navigate = useNavigate();
-  const newRef=useRef();
+  const scrollRef = useRef();
+
 
   const getmovie = () => {
     fetch(`https://api.themoviedb.org/3/movie/${category}?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
       .then(res => res.json())
-      .then(json => setMovies(json.results))
-  }
-  const handleRefernece=()=>
-  {
-    newRef.current.scrollIntoView({behavior:"smooth"})
-  }
+      .then(json => setMovies(json.results));
+  };
 
   useEffect(() => {
-    getmovie()
-  }, [category])
+    getmovie();
+  }, [category]);
+
+  const handleLeft = () => {
+    scrollRef.current.scrollLeft -= 300;
+  };
+
+  const handleRight = () => {
+    scrollRef.current.scrollLeft += 300;
+  };
+
 
   function handleClick() {
-    navigate(`/${title}`)
+    navigate(`/${title}`);
   }
-             function handleHtml() {
-           return seeall ? (
-             <FaArrowLeft onClick={()=>navigate(-1)} style={{ cursor: "pointer" }} />
-           ) : "See All";
-         }
-                 const handleRef=()=>
-    {
-      newRef.current.scrollLeft -=300;
-    }
-    const handleRight =()=>
-    {
-      newRef.current.scrollLeft +=300
-    }
-  return (
-    <div className={seeall ? "Cards1":"Cards"}>
-      <div className={seeall ? "card1" : "card"}>
-        <div className='Category'>
-          <h2 onClick={handleRefernece}>{title}</h2>
-           <h4 ref={newRef} onClick={handleClick} style={{cursor:"pointer"}}>
-        {handleHtml()}
-      </h4>  
-        </div>
-          <div className='wrap'>
-          { seeall? null:(<button  onClick={handleRef} className="arrow Left">
-             <FaArrowLeft/>
-           </button>) }
 
-       <div ref={newRef} className={`images ${seeall ? "images-wrap" : ""}`}>
-          {movies.map((movie) => (
-            <div className='img' key={movie.id}>
-              <img
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}
-              />
-            </div>
-          ))}
-                            
-                    </div>
-                      { seeall? null:(<button  onClick={handleRight} className="arrow right">
-                        <FaArrowRight/>
-                      </button>)
-                       }
+  function handleHtml() {
+    return seeall ? (
+      <FaArrowLeft onClick={() => navigate(-1)} style={{ cursor: "pointer" }} />
+    ) : "See All";
+  }
+
+  const handleMovieClick = (id) => {
+    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.results.length > 0) {
+          setVideoKey(data.results[0].key);   
+        } else {
+          alert("No trailer available");
+        }
+      });
+  };
+
+  return (
+    <div className={seeall ? "Cards1" : "Cards"}>
+      <div className={seeall ? "card1" : "card"}>
+
+       
+        <div className='Category'>
+          <h2>{title}</h2>
+          <h4 onClick={handleClick} style={{ cursor: "pointer" }}>
+            {handleHtml()}
+          </h4>
         </div>
+
+      
+        <div className='wrap'>
+
+          {!seeall && (
+            <button onClick={handleLeft} className="arrow Left">
+              <FaArrowLeft />
+            </button>
+          )}
+
+          <div ref={scrollRef} className={`images ${seeall ? "images-wrap" : ""}`}>
+            {movies.map((movie) => (
+              <div 
+                className='img' 
+                key={movie.id}
+                onClick={() => handleMovieClick(movie.id)}
+              >
+                <img
+                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  alt={movie.title}
+                />
+              </div>
+            ))}
+          </div>
+
+          {!seeall && (
+            <button onClick={handleRight} className="arrow right">
+              <FaArrowRight />
+            </button>
+          )}
+
+        </div>
+
+      
+        {videoKey && (
+          <div className="video-player">
+            <iframe
+              width="1100"
+              height="650"
+              
+              src={`https://www.youtube.com/embed/${videoKey}`}
+              title="Movie Trailer"
+              allowFullScreen
+            ></iframe>
+
+            <button 
+              className="close-btn"
+              onClick={() => setVideoKey(null)}
+            >
+              Back
+            </button>
+          </div>
+        )}
 
       </div>
     </div>
-  )
+  );
 }
 
-export default TitleCards
+export default TitleCards;

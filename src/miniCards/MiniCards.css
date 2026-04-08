@@ -9,11 +9,12 @@
     gap: 20px;
     background-color: black;
     padding: 15px;
-    height: 46vh;
+    height: 52vh;
+    /* border: 1px solid red; */
 }
 
 .miniCards{
-    height: 31%;
+    height: 41%;
 }
 
 
@@ -29,21 +30,22 @@
 }
 .wrap{
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     /* padding-top: 1%; */
     /* border: 1px solid red; */
     gap: 3px;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     position: relative;
 }
 
 .Category{
-    height: 14%;
+    height: 15%;
     width: 98.4%;
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
+    /* border: 1px solid red; */
 }
 
 .images{
@@ -52,7 +54,7 @@
     overflow-x: auto;
     padding-bottom: 10px;
     scrollbar-width: none;
-    height: 78%;
+    /* height: 78%; */
 }
 
 .images::-webkit-scrollbar{
@@ -72,25 +74,82 @@
      margin-top: 4px;
      
     width: 80;
-    height: 200px;  
-    border: 1px solid grey;
+    height: 250px;  
+    border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
     flex-shrink: 0;  
 }
 
 
-.images imgg{
-    border: 1px solid red;
+.imgg img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 15rem;
+    /* height: 100%; */
+    /* object-fit: cover; */
     border-radius: 5px;
     border: 1px solid black;
     transition: transform 0.3s;
 }
 
 
-.images imgg:hover{
+.imgg img:hover{
     transform: scale(1.05);
 }
+
+.arrow.Left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.video-player {
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100rem;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  /* padding: 20px; */
+  /* overflow-y: auto; */
+
+}
+
+.video-player iframe {
+  border-radius: 10px;
+}
+
+.close-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+

@@ -103,7 +103,7 @@ function Login() {
                 <span style={{ color: "black" }}>Remember me</span>
               </div>
 
-              <a className="link" href="/signup">
+              <a className="llink" href="/signup">
                 Reset Password
               </a>
             </div>

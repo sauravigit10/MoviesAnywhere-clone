@@ -33,7 +33,7 @@ function Foryou() {
 
 
   return (
-       <div ref={ref} className='HomeDiv'>   
+       <div ref={ref} className='HomeDivv'>   
         <Navbar cards={movies}/>
         <Navbar2/>
         <Slide/>
@@ -44,8 +44,10 @@ function Foryou() {
       <MiniCards category="recommendations" title="Series_Collection" seeall={false}/>
       <MiniCards2 category="popular" title="Popular_series_Collection" seeall={false}/>
       <MiniCards2 category="top_rated" title="Top_Rated_series_Collection" seeall={false}/>
-     {/* <MiniCards3 personId={287} title="Brad Pitt TV Shows"/>  */} 
-     <div className='divvv' onClick={handleReference} style={{backgroundColor:"black",alignItems:"flex-end",textAlign:"right",paddingRight:"9px",justifyItems:"center"}}> <button className='btn' style={{width:"2.4vw",borderRadius:"100%"}}> <FaArrowUp/></button> </div>
+     {/* <MiniCards3 personId={287} title="Brad Pitt TV Shows"/>*/} 
+     <div className='divvv' onClick={handleReference} style={{backgroundColor:"black",alignItems:"flex-end"
+      ,textAlign:"right",paddingRight:"9px",justifyItems:"center",paddingBottom:"10px"}}> <button className='btn'
+       style={{width:"2.0vw",height:"3.2vh",borderRadius:"100%",border:"1px solid white",marginTop:"5px",paddingTop:"3px"}}> <FaArrowUp /></button> </div>
         <Footer/>
     </div>
   )
