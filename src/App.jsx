@@ -32,6 +32,7 @@ function App() {
       <Route path='/mymovies' element={<Mymovies/>}/>
       <Route path='/login' element={<LazyLogin/>}/>
       <Route path='/signup' element={<LazySignUp/>}/>
+      <Route path='/movies/signup' element={<LazySignUp/>}/>
       <Route path='/foryou' element={<LazyForyou/>}/>
       <Route path='/deals' element={<LazyDeals/>}/>
       <Route path='/mysets' element={<MySets/>}/>

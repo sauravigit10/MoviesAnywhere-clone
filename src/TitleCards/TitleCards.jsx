@@ -2,16 +2,16 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../TitleCards/TitleCards.css';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Navbar from '../Components/Navbar/Navbar';
+import VideoKey from '../Pages/VideoKey/VideoKey';
 
 function TitleCards({ title, category, seeall }) {
 
   const [movies, setMovies] = useState([]);
   const [videoKey, setVideoKey] = useState(null);
-
   const navigate = useNavigate();
   const scrollRef = useRef();
-
-
+  
   const getmovie = () => {
     fetch(`https://api.themoviedb.org/3/movie/${category}?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
       .then(res => res.json())
@@ -52,6 +52,12 @@ function TitleCards({ title, category, seeall }) {
         }
       });
   };
+
+  function VideoKeyToNull()
+  {
+    console.log("clicked");
+      setVideoKey(null);
+  }
 
   return (
     <div className={seeall ? "Cards1" : "Cards"}>
@@ -99,23 +105,9 @@ function TitleCards({ title, category, seeall }) {
 
       
         {videoKey && (
-          <div className="video-player">
-            <iframe
-              width="1100"
-              height="650"
-              
-              src={`https://www.youtube.com/embed/${videoKey}`}
-              title="Movie Trailer"
-              allowFullScreen
-            ></iframe>
-
-            <button 
-              className="close-btn"
-              onClick={() => setVideoKey(null)}
-            >
-              Back
-            </button>
-          </div>
+         <>
+              <VideoKey videokey={videoKey} setVideoKeyasProp={VideoKeyToNull}/>
+             </>
         )}
 
       </div>

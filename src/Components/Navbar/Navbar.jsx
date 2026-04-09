@@ -26,9 +26,9 @@ function Navbar({cards}) {
     </NavLink> 
 
     <div className={`navLinks ${menuOpen ? "active" : ""}`}>
-      <NavLink to="/home" className='navLink'><h3>Home</h3></NavLink> 
-      <NavLink to="/redeem" className='navLink'><h3>Redeem</h3></NavLink> 
-      <NavLink to="/mymovies" className='navLink'><h3>My Movies</h3></NavLink> 
+      <NavLink to="/home" className='navLink'><span>Home</span></NavLink> 
+      <NavLink to="/redeem" className='navLink'><span>Redeem</span></NavLink> 
+      <NavLink to="/mymovies" className='navLink'><span>My Movies</span></NavLink> 
     </div>
   </div>
 
@@ -41,7 +41,7 @@ function Navbar({cards}) {
     </h3>
 
     <button className='navButton'>
-      <Link className='linkk' to="/signup">Sign up</Link>
+      <Link className='linkkk' to="/signup">Sign up Now</Link>
     </button>
 
     <div className="menuIcon" onClick={() => setMenuOpen(!menuOpen)}>

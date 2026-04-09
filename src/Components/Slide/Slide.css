@@ -2,6 +2,8 @@
     height: 95vh;
     background-color: black;
     margin: 0 0 0 0;
+    /* border: 1px solid red; */
+    padding-top: 29px;
 }
 
 .slideDiv {
@@ -15,6 +17,7 @@
     background-color: rgb(19,19,28);
     border-radius: 20px;
     overflow: hidden;
+    /* margin-top: 15px; */
 }
 
 .Banners {

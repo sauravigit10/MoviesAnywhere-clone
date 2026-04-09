@@ -27,9 +27,9 @@ function MySetsMid() {
         <div className='lastSets'>
             <div className='last1'>My Sets</div>
             <div className='last2'>
-                 <h3>Were not seeing any sets in your 
+                 <span>Were not seeing any sets in your 
                   colection <br/> yet.Check back as you add more movies!!
-                 </h3>
+                 </span>
             </div>
         </div>
 

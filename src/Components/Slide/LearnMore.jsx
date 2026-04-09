@@ -29,7 +29,7 @@ function LearnMore() {
             <div className='left'>
                     <h1>Your Movies ,Together at Last <sup>TM</sup></h1>
                     <h4>Because right now is a good time to have your collection in one place.</h4>
-                    <button className='leftButton'>Sign Up Now -Free</button>
+                    <NavLink to='./signup'><button className='leftButton'>Sign Up Now -Free</button></NavLink>
                     <p>Open to U.S. residents 13+</p>
             </div>
             <div className='right'>

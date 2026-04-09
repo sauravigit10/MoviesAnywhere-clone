@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+
 .MySetsMid{
-    height:100vh;
+    height:130vh;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     padding-right: 27px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center ;
+    text-align: center;
     }
 .anothermid{
-    height: 50vh;
+    height: 60vh;
     width: 96.5%;
+    margin-left: 20px;
     /* border: 1px solid red; */
     background-color:rgb(26,26,26);
     border-radius: 15px;
@@ -80,10 +86,22 @@
 .last2{
     height: 40vh;
     border: 1px solid rgb(12,12,12) ;
-    background-color: rgb(12,12,12);
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .8)),url('../../assets/download.svg');
+    background-repeat: space;
+    background-size:auto 100%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    font-family: "Open Sans", sans-serif;   
     
+ 
+}
+.last2 span{
+     font-family: "Open Sans", sans-serif;   
+     font-size: 18px;
+     line-height: 1.5;
+     color: hsla(0, 0%, 100%, .6);
+
 }

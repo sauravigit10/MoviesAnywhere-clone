@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./Login.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
+  const nav=useNavigate();
   const [errors, setErrors] = useState({});
 
  
@@ -48,7 +49,9 @@ function Login() {
 
     if (Object.keys(validationErrors).length === 0) {
       console.log("Form submitted:", formData);
+      nav('/')
       alert("Login successful!");
+      
     }
   };
 
@@ -108,7 +111,8 @@ function Login() {
               </a>
             </div>
 
-            <button className="LoginButton" type="submit">
+            <button className="LoginButton" type="submit" >
+              
               Continue
             </button>
 

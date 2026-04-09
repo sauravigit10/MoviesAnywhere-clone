@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
 
 .Nav22 {
-  height: 18vh;
+  height: 15vh;
   background-color: black;
   display: flex;
   align-items: center;
@@ -14,6 +15,8 @@
   z-index: 1000;
   padding: 0;
   margin: 0%;
+  font-family: Open Sans Semi-Bold, sans-serif;
+  font-size: 18px;
 }
 
 
@@ -24,20 +27,29 @@
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size: 17px;
+  /* border: 1px solid red; */
+  font-family: Open Sans Semi-Bold, sans-serif;
+  font-size: 18px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.25s ease;
-  margin-left: 20px;
+  margin-left: 31px;
 }
 
 .buttonn:not(.active):hover {
   background-color: rgb(107, 104, 104);
+   font-family: Open Sans Semi-Bold, sans-serif;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .buttonn.active {
   background-color: rgb(77, 77, 77);
+   font-family: Open Sans Semi-Bold, sans-serif;
+  font-size: 18px;
+  border: 3px solid white;
 }
 
