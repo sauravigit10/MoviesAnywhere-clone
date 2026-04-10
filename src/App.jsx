@@ -19,6 +19,8 @@ const LearnMore= React.lazy(()=> import('./Components/Slide/LearnMore'))
 const Termsofuse= React.lazy(()=> import('./Components/Slide/Links/Termsofuse'))
 const Privacypolicy= React.lazy(()=> import('./Components/Slide/Links/Privacypolicy'))
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import VideoKey from './Pages/VideoKey/VideoKey'
+import MoviePage from './Pages/MoviePage/MoviePage'
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
       <Route path='/movies' element={<LearnMore/>}/>
       <Route path='/termsofuse' element={<Termsofuse/>}/>
       <Route path='/privacypolicy' element={<Privacypolicy/>}/>
+      <Route path='/videoKey' element={<VideoKey/>}/>
+       <Route path="/movie/:id" element={<MoviePage/>} />
   </Routes>
   </React.Suspense>
    </BrowserRouter>

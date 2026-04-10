@@ -1,0 +1,55 @@
+.video-overlay {
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  /* z-index: 2000; */
+   /* border: 1px solid red; */
+}
+
+.video-container {
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.video-container iframe {
+  height: 60rem;
+
+  width: 99vw;
+  /* height: 200px; */
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  margin-top: 19rem;
+  
+}
+
+.poster img {
+  overflow: hidden;
+  /* width: 98.9vw; */
+  height: 20vh;
+  /* z-index: -1000; */
+  position: relative;
+  top: 0;
+  /* border-radius: 10px; */
+  /* margin-bottom: 10px; */
+  border: 1px solid red;
+  /* background-attachment: fixed; */
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}

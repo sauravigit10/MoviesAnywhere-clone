@@ -13,6 +13,7 @@ import '../Foryou/Foryou.css'
 
 function Foryou() {
   const [movies, setMovies] = useState([]);
+  const[moviesClicked,setMoviesClicked]=useState(false);
   const ref=useRef();
   useEffect(() => {
     fetch(
@@ -34,7 +35,7 @@ function Foryou() {
 
   return (
        <div ref={ref} className='HomeDivv'>   
-        <Navbar cards={movies}/>
+        <Navbar cards={movies} moviesClicked="false" />
         <Navbar2/>
         <Slide/>
       <TitleCards title="NowPlaying" category="now_playing" seeall={false} />

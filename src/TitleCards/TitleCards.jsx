@@ -9,6 +9,8 @@ function TitleCards({ title, category, seeall }) {
 
   const [movies, setMovies] = useState([]);
   const [videoKey, setVideoKey] = useState(null);
+  const[posterId , setPosterId]=useState(null);
+  const[selectedMovies,setSelectedMovies]=useState(null);
   const navigate = useNavigate();
   const scrollRef = useRef();
   
@@ -41,8 +43,12 @@ function TitleCards({ title, category, seeall }) {
     ) : "See All";
   }
 
-  const handleMovieClick = (id) => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
+  const handleMovieClick = (movie) => {
+     navigate(`/movie/${movie.id}`);
+    setPosterId(movie.id)
+    setSelectedMovies(movie);
+
+    fetch(`https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=61ba9839bf7e2d04c438b30a39c4e3ef`)
       .then(res => res.json())
       .then(data => {
         if (data.results.length > 0) {
@@ -55,7 +61,6 @@ function TitleCards({ title, category, seeall }) {
 
   function VideoKeyToNull()
   {
-    console.log("clicked");
       setVideoKey(null);
   }
 
@@ -85,7 +90,7 @@ function TitleCards({ title, category, seeall }) {
               <div 
                 className='img' 
                 key={movie.id}
-                onClick={() => handleMovieClick(movie.id)}
+                onClick={() => handleMovieClick(movie)}
               >
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -103,16 +108,14 @@ function TitleCards({ title, category, seeall }) {
 
         </div>
 
+        
+         
+              <VideoKey videokey={videoKey} setVideoKeyasProp={VideoKeyToNull} moviesTitle={selectedMovies} />
+             
       
-        {videoKey && (
-         <>
-              <VideoKey videokey={videoKey} setVideoKeyasProp={VideoKeyToNull}/>
-             </>
-        )}
 
       </div>
     </div>
   );
 }
-
 export default TitleCards;

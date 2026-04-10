@@ -1,30 +1,47 @@
-import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
+import React from 'react';
+import Navbar from '../../Components/Navbar/Navbar';
+import './VideoKey.css';
+function VideoKey({ videokey, setVideoKeyasProp, moviesTitle }) {
 
-function VideoKey({videokey,setVideoKeyasProp}) {
+  if (!moviesTitle) return null;
+
   return (
-    <div style={{height:"200vh"}}>
-        <Navbar/>
-          <div className="video-player">
-            
-            <iframe
-              width="300"
-              height="640"
-              
-              src={`https://www.youtube.com/embed/${videokey}`}
-              title="Movie Trailer"
-              allowFullScreen
-            ></iframe>
+    <>
+   <Navbar  MoviesClicked="true" />
+    
+    <div className="video-overlay" onClick={setVideoKeyasProp}>
+     
+      <div  
+        className="video-container"
+        onClick={(e) => e.stopPropagation()}
+      >
+      
+        <button className="close-btn" onClick={setVideoKeyasProp}>
+          ✖
+        </button>
 
-            <button 
-              className="close-btn"
-              onClick={()=> {setVideoKeyasProp}}
-            >
-              Back
-            </button>
-          </div>
+       <div >
+          <iframe
+            src={`https://www.youtube.com/embed/${videokey}?autoplay=1&loop=1&mute=1&controls=0`}
+            title="Movie Trailer"
+            
+            allow="autoplay; encrypted-media"
+            ></iframe>
+            </div>
+
+           <div className="poster">
+          <img 
+            src={`https://image.tmdb.org/t/p/w500${moviesTitle?.poster_path}`}
+            alt={moviesTitle?.title}
+          />
+          <h2>{moviesTitle?.title}</h2>
+        </div>
+        
+      </div>
+
     </div>
-  )
+      </>
+  );
 }
 
-export default VideoKey
+export default VideoKey;

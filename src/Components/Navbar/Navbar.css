@@ -16,6 +16,21 @@
     /* font-weight: 500;     */
     /* font-family:  Open Sans Semi-Bold, sans-serif; */
 }
+.NavwithnoBackground{
+  height: 8.1vh;
+  width: 95rem;
+    /* border: 1px solid red; */
+    /* width: 100%; */
+  position: absolute;
+ 
+  top: 0;
+  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:white; */
+    /* color: bl\; */
+    align-items: center;
+}
 
 .Navdiv{
     /* border: 1px solid red; */

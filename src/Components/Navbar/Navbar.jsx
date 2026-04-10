@@ -4,7 +4,7 @@ import logo from '../../assets/logo2.png';
 import { Link, NavLink } from 'react-router-dom';
 import {FaSearch, FaArrowLeft } from "react-icons/fa";
 
-function Navbar({cards}) {
+function Navbar({cards,MoviesClicked}, ) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ function Navbar({cards}) {
 
   return (
     <>
-   <div className='Nav'>
+   <div  className={MoviesClicked ? 'NavwithnoBackground':'Nav'}>
   
 
   <div className='Navdiv'>

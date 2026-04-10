@@ -24,7 +24,7 @@ function LearnMore() {
   return (
     <>
     <div className='LearnMainDiv'>
-        <Navbar/>
+          <Navbar MoviesClicked="true" />
         <div className='miniLearnDiv'>
             <div className='left'>
                     <h1>Your Movies ,Together at Last <sup>TM</sup></h1>
